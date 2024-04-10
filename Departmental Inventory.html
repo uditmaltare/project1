@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.10/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gurukul ERP</title>
+</head>
+
+<body class="bg-green-100  mt-* ml-* mb-* mr-* ">
+    <div class="flex ">
+        <aside id="sidebar" class="bg-gray-300 md:w-64 lg:w-64 h-auto md:block ">
+            <div class="inline-flex  items-center p-4   mb-0 w-64 bg-gray-800">
+                <div
+                    class="relative inline-flex  items-center justify-center w-10 h-10  bg-blue-300 rounded-full dark:bg-gray-600">
+                    <span class="font-medium text-black dark:text-black animate-pulse font-bold">GK</span>
+                </div>
+                <div>
+                    <h1 class="text-xl m-1 font-semibold text-white">Gurukul ERP</h1>
+                </div>
+            </div>
+            <div class=" sidebar  bg-gray-300 w-64 lg:h-screen ">
+                <ul>
+                    <div class="flex items-center px-3   hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-home  px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium "><a href="index.html">Dashboard</a></li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-book  px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block"
+                                    href="#">Admissions</a></li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-graduation-cap  px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Students </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-credit-card px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Fees &
+                                    Payments </a></li>
+                        </div>
+                    </div>
+                    <div class="flex-grow m border-t-2 mt-1 border-gray-700 m-2"></div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-clock-o px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Time Table
+                                </a></li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-quora px-1 py-4 " aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Quiz </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="flex-grow m border-t-2 mt-1 border-gray-700 m-2"></div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><img class="w-5 h-5 px-1" src="res.png "></div>
+                        <div>
+                            <li class="px-1 py-4 items-center font-medium"><a class="block" href="#">Results</a></li>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center px-3 hover:text-purple-500 hover:bg-gray-200 " onclick="dropdown()">
+                        <div>
+                            <li class="  py-4  items-center font-medium rounded-bl-md"><a class="flex items-center" href="#"
+                                    target="_blank">
+                                    <div><img class="w-6 h-5 px-1" src="dep.png"></div>
+                                    <div class="flex w-full items-center ml-1"><span>Department</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <span class="text-sm rotate-180" id="arrow"><i class="fa fa-angle-down"></i></span>
+                    </div>
+                    <div class="text-sm text-left font-thin mt-2 w-4/5 mx-auto" id="submenu">
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1" > <a  href="add depart.html" target="_blank">Add Department</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1"> <a href="department list.html"  target="_blank"> Department List</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1"> <a  href="staff.html"  target="_blank"> Add staff</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1"> <a   href="manage staff.html"  target="_blank"> Manage Staff</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1"> <a href="Departmental Inventory.html"  target="_blank"> Department inventory</a></h1>
+                        </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-comments  px-1 py-4 " aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Notifications
+                                </a></li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-cog  px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Settings </a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                function dropdown(){
+                    document.querySelector('#submenu').classList.toggle('hidden');
+                    document.querySelector('#arrow').classList.toggle('rotate-0');
+                }
+                dropdown()
+            </script>
+        </aside>
+        <!-- main box -->
+        <div class="border-2 border-black bg-purple-300  md:w-screen  m-10">
+            <div class="flex justify-evenly mt-10 items-center ">
+                <div>
+                    <h1 class="text-3xl  text-black font-bold">Department Inventory</h1>
+                </div>
+                <div>
+                    <!-- department -->
+                    <form action="">
+                        <select class="h-12 max-w-md shadow-lg border border-gray-300 rounded-md " name="Department">
+                            <option>Department Name</option>
+                            <option>Computer Department</option>
+                            <option>Electronics Department</option>
+                            <option>Civil Department</option>
+                            <option>Chemestry Department</option>
+                            <option>English Department</option>
+                            <option>Electrical Department</option>
+                            <option>Physics Department</option>
+                            <option>Mechanical Department</option>
+                            <option>Mathematics Department</option>
+                            <option>M.B.A Department</option>
+                            <option>M.C.A Department</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="flex justify-evenly mt-10">
+                <div>
+                    <form action="">
+                        <select class="h-12 max-w-md shadow-md  border border-gray-300 rounded-md " name="Department">
+                            <option>Item Name </option>
+                            <option>Computers</option>
+                            <option>CCTV Camera</option>
+                            <option>Machines</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <form action="">
+                        <select class="h-12 max-w-md  shadow-md border border-gray-300 rounded-md " name="Department">
+                            <option>Item Quantity </option>
+                            <option>360</option>
+                            <option>120</option>
+                            <option>60</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <input type="date" name="dob" placeholder="Date"
+                        class="h-12 max-w-md shadow-md border border-gray-300 rounded-md ">
+                </div>
+                <div>
+                    <form action="">
+                        <select class="h-12 max-w-md shadow-md  border border-gray-300 rounded-md " name="Department">
+                            <option>Add Item </option>
+                            <option>AC</option>
+                            <option>Mike</option>
+                            <option>Advance Computer System</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="max-w-4xl text-center mx-auto mt-16">
+
+                <!-- Table -->
+                <table class="min-w-full shadow-md bg-white rounded-lg overflow-hidden">
+                    <!-- Table Header -->
+                    <thead class="bg-gray-800  text-white">
+                        <tr>
+                            <th class="px-4  py-3">S.No</th>
+                            <th class="px-4 py-3">Item Name</th>
+                            <th class="px-4 py-3">Quantity Available</th>
+                            <th class="px-4 py-3">Issue</th>
+                        </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-2">1.</td>
+                            <td class="py-2">Computer</td>
+                            <td class="py-2">300</td>
+                            <td class="py-2">Wi-Fi problem</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">2.</td>
+                            <td class="py-2">CCTV Camera</td>
+                            <td class="py-2">100</td>
+                            <td class="py-2">Clearity</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">3.</td>
+                            <td class="py-2">Machines</td>
+                            <td class="py-2">45</td>
+                            <td class="py-2">Parts</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">4.</td>
+                            <td class="py-2">AC</td>
+                            <td class="py-2">0</td>
+                            <td class="py-2">No Issue</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">5.</td>
+                            <td class="py-2">Boilers</td>
+                            <td class="py-2">7</td>
+                            <td class="py-2">Parts</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>

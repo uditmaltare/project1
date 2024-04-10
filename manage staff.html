@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.10/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gurukul ERP</title>
+</head>
+
+<body class="bg-green-100  mt-* ml-* mb-* mr-*">
+    <div class="flex ">
+        <aside id="sidebar" class="bg-gray-300 md:w-64 lg:w-64 h-auto md:block ">
+            <div class="inline-flex  items-center p-4   mb-0 w-64 bg-gray-800">
+                <div
+                    class="relative inline-flex  items-center justify-center w-10 h-10  bg-blue-300 rounded-full dark:bg-gray-600">
+                    <span class="font-medium text-black dark:text-black animate-pulse font-bold">GK</span>
+                </div>
+                <div>
+                    <h1 class="text-xl m-1 font-semibold text-white">Gurukul ERP</h1>
+                </div>
+            </div>
+            <div class=" sidebar  bg-gray-300 w-64 lg:h-screen ">
+                <ul>
+                    <div class="flex items-center px-3   hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-home  px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium "><a href="index.html">Dashboard</a></li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-book  px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block"
+                                    href="#">Admissions</a></li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-graduation-cap  px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Students </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-credit-card px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Fees &
+                                    Payments </a></li>
+                        </div>
+                    </div>
+                    <div class="flex-grow m border-t-2 mt-1 border-gray-700 m-2"></div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-clock-o px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Time Table
+                                </a></li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-quora px-1 py-4 " aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Quiz </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="flex-grow m border-t-2 mt-1 border-gray-700 m-2"></div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><img class="w-5 h-5 px-1" src="res.png "></div>
+                        <div>
+                            <li class="px-1 py-4 items-center font-medium"><a class="block" href="#">Results</a></li>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center px-3 hover:text-purple-500 hover:bg-gray-200 " onclick="dropdown()">
+                        <div>
+                            <li class="  py-4  items-center font-medium rounded-bl-md"><a class="flex items-center" href="#"
+                                    target="_blank">
+                                    <div><img class="w-6 h-5 px-1" src="dep.png"></div>
+                                    <div class="flex w-full items-center ml-1"><span>Department</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <span class="text-sm rotate-180" id="arrow"><i class="fa fa-angle-down"></i></span>
+                    </div>
+                    <div class="text-sm text-left font-thin mt-2 w-4/5 mx-auto" id="submenu">
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1" > <a  href="add depart.html" target="_blank">Add Department</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1"> <a href="department list.html"  target="_blank"> Department List</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1"> <a  href="staff.html"  target="_blank"> Add staff</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1"> <a   href="manage staff.html"  target="_blank"> Manage Staff</a></h1>
+                       <h1 class="cursor-pointer font-semibold p-2 hover:bg-gray-600 rounded-md mt-1"> <a href="Departmental Inventory.html"  target="_blank"> Department inventory</a></h1>
+                        </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-comments  px-1 py-4 " aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Notifications
+                                </a></li>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-3  hover:text-purple-500  hover:bg-gray-200 ">
+                        <div><i class="fa fa-cog  px-1 py-4" aria-hidden="true"></i></div>
+                        <div>
+                            <li class=" px-1 py-4  items-center  font-medium   "><a class="block" href="#">Settings </a>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                function dropdown(){
+                    document.querySelector('#submenu').classList.toggle('hidden');
+                    document.querySelector('#arrow').classList.toggle('rotate-0');
+                }
+                dropdown()
+            </script>
+        </aside>
+        <div class="border-2 border-black m-11 md:w-screen bg-gradient-to-br from-indigo-400 to-pink-500">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-4xl m-14 text-white font-bold">Manage Staff</h1>
+                </div>
+                <div class="flex mr-2">
+                    <div class="max-w-4xl mx-auto mr-3">
+
+                        <!-- Search Bar -->
+                        <div class="relative">
+                            <input type="text"
+                                class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                                placeholder="Search Staff">
+                            <button
+                                class="absolute inset-y-0 right-0 px-4 py-2 bg-indigo-500 text-white rounded-r-md hover:bg-indigo-600 focus:outline-none">Search</button>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <!-- department -->
+                        <form action="">
+                            <select class="h-10 max-w-md shadow-md  border border-gray-300 rounded-md " name="Department">
+                                <option>Department Name</option>
+                                <option>Computer Department</option>
+                                <option>Electronics Department</option>
+                                <option>Civil Department</option>
+                                <option>Chemestry Department</option>
+                                <option>English Department</option>
+                                <option>Electrical Department</option>
+                                <option>Physics Department</option>
+                                <option>Mechanical Department</option>
+                                <option>Mathematics Department</option>
+                                <option>M.B.A Department</option>
+                                <option>M.C.A Department</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-4xl mx-auto mt-5 items-center">
+
+                <!-- Table -->
+                <table class="min-w-full shadow-md bg-gray-200 mb-3 rounded-lg overflow-hidden">
+                  <!-- Table Header -->
+                  <thead class="bg-gray-800 text-white">
+                    <tr>
+                      <th class="px-4  py-2">Department Name</th>
+                      <th class="px-4 py-2">Name</th>
+                      <th class="px-4 py-2">Email Id</th>
+                      <th class="px-4 py-2">Salary</th>
+                      <th class="px-4 py-2">Contact No.</th>
+                      <th class="px-4 py-2">Action</th>
+                    </tr>
+                  </thead>
+                  <!-- Table Body -->
+                  <tbody class="divide-y divide-gray-200">
+                    <tr>
+                      <td class="px-4 py-2">Mechanical</td>
+                      <td class="px-4 py-2">Vipul Upadhyay</td>
+                      <td class="px-4 py-2">Vipulupadhyay@gmail.com</td>
+                      <td class="px-4 py-2">35,000</td>
+                      <td class="px-4 py-2">9770573215</td>
+                      <td> <button type="button" class="px-4 py-2">View,Update,Delete</button>
+
+                    </td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-2">Civil</td>
+                      <td class="px-4 py-2">Lakhan Kumar</td>
+                      <td class="px-4 py-2">lakhankumar@gmail.com</td>
+                      <td class="px-4 py-2">15,000</td>
+                      <td class="px-4 py-2">9156348545</td>
+                      <td> <button type="button" class="px-4 py-2">View,Update,Delete</button></td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-2">Mechanical</td>
+                      <td class="px-4 py-2">Sanidhya Nagar</td>
+                      <td class="px-4 py-2">Sanidhyanagar@gmail.com</td>
+                      <td class="px-4 py-2">35,000</td>
+                      <td class="px-4 py-2">9125478563</td>
+                      <td> <button type="button" class="px-4 py-2">View,Update,Delete</button></td>
+                      </tr>
+                    <tr>
+                        <td class="px-4 py-2">Electrical</td>
+                        <td class="px-4 py-2">Ramakanta Shukla</td>
+                        <td class="px-4 py-2">Ramakantashukla@gmail.com</td>
+                        <td class="px-4 py-2">45,000</td>
+                        <td class="px-4 py-2">8521478965</td>
+                        <td> <button type="button" class="px-4 py-2">View,Update,Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Computer</td>
+                        <td class="px-4 py-2">Vijay mandle</td>
+                        <td class="px-4 py-2">Vijaymandle@gmail.com</td>
+                        <td class="px-4 py-2">45,000</td>
+                        <td class="px-4 py-2">9632587415</td>
+                      <td> <button type="button" class="px-4 py-2">View,Update,Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Mechanics</td>
+                        <td class="px-4 py-2">Rajnish Rai</td>
+                        <td class="px-4 py-2">Rajnishrai@gmail.com</td>
+                        <td class="px-4 py-2">55,000</td>
+                        <td class="px-4 py-2">9632554123</td>
+                      <td> <button type="button" class="px-4 py-2">View,Update,Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Computer</td>
+                        <td class="px-4 py-2">Shradha Paliwal</td>
+                        <td class="px-4 py-2">Shradhapaliwal@gmail.com</td>
+                        <td class="px-4 py-2">15,000</td>
+                        <td class="px-4 py-2">9658487415</td>
+                      <td> <button type="button" class="px-4 py-2">View,Update,Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Physics</td>
+                        <td class="px-4 py-2">Pankaj Sanawa</td>
+                        <td class="px-4 py-2">Pankajsanawa@gmail.com</td>
+                        <td class="px-4 py-2">45,000</td>
+                        <td class="px-4 py-2">9632584515</td>
+                      <td> <button type="button" class="px-4 py-2">View,Update,Delete</button></td>
+                      </tr>
+                      <tr>
+                        <td class="px-4 py-2">Electronics</td>
+                        <td class="px-4 py-2">Amit Kanungo</td>
+                        <td class="px-4 py-2">Amitkanungo@gmail.com</td>
+                        <td class="px-4 py-2">25,000</td>
+                        <td class="px-4 py-2">9632587478</td>
+                      <td> <button type="button" class="px-4 py-2">View,Update,Delete</button></td>
+                      </tr>
+                  </tbody>
+                </table>
+              
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>
